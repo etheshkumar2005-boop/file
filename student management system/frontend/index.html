@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Student Management System</h2>
+
+<div class="form-container">
+    <input type="text" id="name" placeholder="Student Name">
+    <input type="number" id="roll" placeholder="Roll Number">
+
+    <select id="year">
+        <option value="">Select Year</option>
+        <option value="First Year">First Year</option>
+        <option value="Second Year">Second Year</option>
+        <option value="Third Year">Third Year</option>
+    </select>
+
+    <input type="text" id="department" placeholder="Department">
+    <input type="text" id="section" placeholder="Section">
+    <input type="text" id="grade" placeholder="Grade">
+
+    <button onclick="addStudent()">Add / Update Student</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Year</th>
+            <th>Department</th>
+            <th>Section</th>
+            <th>Grade</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="studentTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
